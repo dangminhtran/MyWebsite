@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+body {
+    height: 100vh;
+    background: url(mybackground.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile_card{
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.card_header{
+    background: rgb(62, 50, 56);
+    padding: 60px 40px;
+}
+.pic{
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(130deg, #74b9ff, #e66767);
+    border-radius: 50%;
+    margin: auto;
+    background-size: 200% 200%;
+    animation: spin 2s infinite;
+}
+@keyframes spin {
+    25%{
+        background-position: left bottom;
+      }
+      50%{
+        background-position: right bottom;
+      }
+      75%{
+        background-position: right top;
+      }
+      100%{
+        background-position: left top;
+      }
+}
+.pic img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.name{
+    color: rgb(233, 225, 214);
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.job{
+    font-size: 18px;
+    color:rgb(187, 62, 125);
+    font-weight: 300;
+}
+.websites{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.websites a{
+    color: rgb(243, 235, 235);
+    width: 50px;
+    font-size: 22px;
+    transition: .5s linear;
+}
+.websites a:hover {
+    color: rgb(211, 43, 202);
+}
+.contact_btn{
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 20px;
+    color: rgb(167, 82, 151);
+    border: 2px solid rgb(167, 82, 151);
+    border-radius: 10px;
+    margin-top: 16px;
+    transition: .5s linear;
+}
+.contact_btn:hover{
+  background: rgb(167, 82, 151);
+  color: rgb(243, 235, 235);
+}
+.card_footer{
+  background: rgb(243, 235, 235);
+  padding: 50px 10px;
+}
+.numbers{
+  display: flex;
+  align-items: center;
+}
+.item {
+  flex: 1;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: rgb(236, 58, 207);
+}
+.item span{
+  display: block;
+  font-size: 30px;
+  color: rgb(37, 29, 36);
+}
+.border{
+  width: 1px;
+  height: 30px;
+  background: black;
+}
+
+/* @keyframes change {
+    0% {
+        background-position: 25% 50%;
+      }
+      50% {
+        background-position: 50% 100%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+      50%{
+        background-position: 50% 25%;
+      }
+  } */
+  
