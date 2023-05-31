@@ -79,7 +79,9 @@ body {
     color: rgb(211, 43, 202);
 }
 .contact_btn{
-    display: inline-block;
+    margin: auto;
+    width: 60%;
+    display: block;
     padding: 12px 20px;
     font-size: 20px;
     color: rgb(167, 82, 151);
@@ -102,33 +104,35 @@ body {
 }
 .item {
   flex: 1;
-  text-transform: uppercase;
-  font-size: 15px;
   color: rgb(236, 58, 207);
 }
 .item span{
   display: block;
-  font-size: 30px;
+  font-size: 13px;
   color: rgb(37, 29, 36);
 }
+
 .border{
   width: 1px;
   height: 30px;
   background: black;
 }
 
-/* @keyframes change {
-    0% {
-        background-position: 25% 50%;
-      }
-      50% {
-        background-position: 50% 100%;
-      }
-      100% {
-        background-position: 100% 50%;
-      }
-      50%{
-        background-position: 50% 25%;
-      }
-  } */
+#profile {
+  display: block;
+}
+
+#contact {
+  display: none;
+}
+
+/* Add transition effect */
+#profile, #contact {
+  transition: all 0.5s ease-in-out;
+}
+
+/* Set opacity to 0 for hidden sections */
+#profile.hidden, #contact.hidden {
+  opacity: 0;
+}
   
