@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work Sans">
+  <link rel="stylesheet" href="styleNew.css">
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+  <section id="profile">
+    <div class="profile_card">
+      <div class="card_header">
+        <div class="pic">
+          <img src="avatar.jpg" alt="dangminhtran">
+        </div>
+        <div class="name">Dang Minh Tran</div>
+        <div class="job">Web designer</div>
+        <div class="websites">
+          <a class="fab fa-facebook" target="_blank" href="https://www.facebook.com/henopkisin/"></a>
+          <a href="https://www.linkedin.com/in/dangminhtran/" target="_blank" class="fab fa-linkedin"></a>
+          <a href="https://github.com/dangminhtran" target="_blank" class="fab fa-github"></a>
+        </div>
+        <div>
+          <a href="MyResume - Current.pdf" class="contact_btn" target="_blank">My Resume</a>
+          <a class="contact_btn" onclick="showContactSection()">Contact me</a>
+        </div>
+      </div>
+      <div class="card_footer">
+        <h1 style="text-align: center; position: relative; top: -20px;">Skills</h1>
+        <div class="numbers">
+          <div class="item">
+            <span>React.js</span>
+          </div>
+          <div class="border"></div>
+          <div class="item">
+            <span>JavaScript</span>
+          </div>
+          <div class="border"></div>
+          <div class="item">
+            <span>HTML</span>
+          </div>
+          <div class="border"></div>
+          <div class="item">
+            <span>CSS</span>
+          </div>
+          <div class="border"></div>
+          <div class="item">
+            <span>Java</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact">
+    <div class="profile_card">
+      <div class="card_header">
+        <div class="pic">
+          <img src="avatar.jpg" alt="dangminhtran">
+        </div>
+        <div class="name">Dang Minh Tran</div>
+        <div class="job">Web designer</div>
+        <div class="websites">
+          <a class="fab fa-facebook" target="_blank" href="https://www.facebook.com/henopkisin/"></a>
+          <a href="https://www.linkedin.com/in/nicktran8702/" target="_blank" class="fab fa-linkedin"></a>
+          <a href="https://github.com/dangminhtran" target="_blank" class="fab fa-github"></a>
+        </div>
+        <div>
+          <a href="MyResume - Current.pdf" class="contact_btn" target="_blank">My Resume</a>
+          <a class="contact_btn" onclick="showProfileSection()">Profile</a>
+        </div>
+      </div>
+      <div class="card_footer">
+        <div class="numbers">
+          <div class="item">
+            <span id="follower-count">8</span>
+            Posts
+          </div>
+          <div class="border"></div>
+          <div class="item">
+            <span id="post-count">1</span>
+            Following
+          </div>
+          <div class="border"></div>
+          <div class="item">
+            <span>130</span>
+            Followers
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
